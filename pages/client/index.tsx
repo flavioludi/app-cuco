@@ -66,7 +66,7 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch(`http://api.cuco.local/api/client`)
+  const res = await fetch(`${process.env.api_base_url}/client`)
   const { data } = await res.json()
 
   if (!data) {

@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
 import MainHeader from './MainHeader'
 
 const MainLayout: React.FC<Props> = ({
   children
 }) => {
   return (
-    <div className={styles.container}>
+    <div className="global-container">
       <Head>
         <title>Cuco App</title>
         <meta name="description" content="Cuco app" />
@@ -15,11 +14,11 @@ const MainLayout: React.FC<Props> = ({
 
       <MainHeader />
 
-      <main className={styles.main}>
+      <main className="global-main">
         {children}
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <a
           href="//khosmos.com.br"
           target="_blank"

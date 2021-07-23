@@ -395,7 +395,7 @@ export default function Home({
 
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch(`http://api.cuco.local/api/client`)
+  const res = await fetch(`${process.env.api_base_url}/client`)
   const { data } = await res.json()
 
   return {
@@ -407,7 +407,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
-  const res = await fetch(`http://api.cuco.local/api/client/${params.id}`)
+  const res = await fetch(`${process.env.api_base_url}/client/${params.id}`)
   const { data } = await res.json()
 
   if (!data) {

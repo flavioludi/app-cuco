@@ -4,7 +4,7 @@ export default function Example() {
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <div className="relative z-10 bg-white lg:max-w-2xl lg:w-full">
           <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
@@ -23,7 +23,7 @@ export default function Example() {
               <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <a href="#">
-                    <span className="sr-only">Workflow</span>
+                    <span className="sr-only">Cuco</span>
                     <img
                       className="h-8 w-auto sm:h-10"
                       src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
